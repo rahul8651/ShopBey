@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>ShopBey Store</h1>
+        <button class="cart-btn" onclick="toggleCart()">🛒 Cart <span id="cart-count">0</span></button>
+    </header>
+
+    <div class="products" id="product-list"></div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <hr />
+        <div class="total">Total: ₹<span id="total-price">0</span></div>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
